@@ -1,0 +1,210 @@
+.rectangle{
+    margin-left: 8vh;
+    margin-top: 46vh;
+    width: 40vh;
+    height: 17vh;
+    background-color: #EDC400;
+    
+  
+}
+.rectangle1{
+    margin-left: 8vh;
+    margin-top: 27vh;
+    width: 40vh;
+    height: 17vh;
+    background-color: #EDC400;
+}
+
+
+.rectangle2{
+    margin-left: 8vh;
+    margin-top: 27vh;
+    width: 40vh;
+    height: 17vh;
+    background-color: #EDC400;
+}
+.pom{
+    margin-left: 18.2vh;
+    margin-top: -20.5vh;
+    height: 0px;
+    width: 0px;
+    border-left: 4px solid transparent;
+    border-right: 139px solid #263842;
+    border-top: 54px solid transparent;
+    border-bottom: 57px solid transparent;
+}
+
+.pom1{
+    margin-left: 18.2vh;
+    margin-top: -20.5vh;
+    height: 0px;
+    width: 0px;
+    border-left: 4px solid transparent;
+    border-right: 139px solid #263842;
+    border-top: 54px solid transparent;
+    border-bottom: 57px solid transparent;
+}
+
+.pom2{
+    margin-left: 18.2vh;
+    margin-top: -20.5vh;
+    height: 0px;
+    width: 0px;
+    border-left: 4px solid transparent;
+    border-right: 139px solid #263842;
+    border-top: 54px solid transparent;
+    border-bottom: 57px solid transparent;
+}
+
+.textTrie{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    margin-top: -82px;
+    font-family: sans-serif;
+}
+.textNbreTirage{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    margin-top: 39px;
+    font-family: sans-serif;
+    margin-right: 87px;
+    margin-top: 44px;
+}
+.textTirageEf{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    position: absolute;
+    margin-top: 104px;
+    margin-right: 131px;
+    margin-left: 60px;
+    font-family: sans-serif;
+}
+
+.textListe{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    margin-top: 44px;
+    font-family: sans-serif;
+}
+
+.textNbreListe{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    margin-top: -84px;
+    font-family: sans-serif;
+    position: absolute;
+    margin-right: 136px;
+    margin-left: 60px;
+}
+.listTirer{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    position: absolute;
+    margin-top: -21px;
+    margin-right: 161px;
+    margin-left: 60px;
+    font-family: sans-serif;
+}
+.textNewTir1{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    margin-top: 44px;
+    font-family: sans-serif;
+}
+.newTir1{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    margin-top: -70px;
+    font-family: sans-serif;
+    position: absolute;
+    margin-right: 161px;
+    margin-left: 60px;
+}
+.newTir2{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    margin-top: -28px;
+    font-family: sans-serif;
+    margin-right: 29px;
+    margin-left: -83px;
+}
+.rectangle3{
+    width: 540px;
+    height: 67px;
+    position: absolute;
+    margin-top: -416px;
+    margin-left: 797px;
+    margin-right: -10px;
+    border: solid #263842;
+}
+
+.detailListT{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    margin-top: 14px;
+    font-family: sans-serif;
+    font-size: xx-large;
+}
+.container{
+    margin-top: -360px;
+    margin-right: 18px;
+    margin-left: 783px
+}
+.table{
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    margin-left: 28px;
+    height: 39px;
+    border: #263842;
+    border-collapse: collapse;
+}
+
+tr{
+    padding: 10px;
+    border-bottom: 5px solid #263842;
+    border: 5px solid #263842;
+    text-align: center;
+}
+th, td{
+    width: 100px;
+    border: 5px solid #263842;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 906px;
+    font-family: sans-serif;
+
+}
+
+button{
+    background-color: #EDC400;
+    font-family: sans-serif;
+    border-radius: 0.4rem;
+}
+
+.voirPlus{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 971px;
+
+}
