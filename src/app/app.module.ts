@@ -8,10 +8,12 @@ import { TirageComponent } from './tirage/tirage.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ResultatTirageComponent } from './resultat-tirage/resultat-tirage.component'
 
+
 @NgModule({
   declarations: [
     AppComponent,
     TirageComponent,
+
     AccueilComponent,
     ResultatTirageComponent    
   ],

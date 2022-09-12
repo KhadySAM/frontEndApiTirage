@@ -1,28 +1,12 @@
-/* .triangle{
-    box-sizing: border-box;
-
+/*.formulaire{
+    display: flex;
     position: absolute;
-    width: 573px;
-    height: 570px;
-    left: 40px;
-    top: 401px;
-
-    background-color: #263842;
-    border: 5px solide #000;
-    border-radius: 70px;
-}
-
- .polygon{
-   
-position: absolute;
-width: 536.23px;
-height: 570px;
-left: 375.03px;
-top: 956.6px;
-
-background: red;
-transform: rotate(-90.08deg);
-} */
+    margin-top: 188px;
+    margin-left: 3vh;
+    width: 24vh;
+    height: 4vh;
+    line-height: 12px;
+}*/
 .poly2{
 position: absolute;
 width: 133.43px;
@@ -33,27 +17,27 @@ top: 875.81px;
 background: #FFFFFF;
 transform: rotate(-90.91deg);
 }
+.container1{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: -275px;
+    margin-left: 128px;
+    width: 16px;
+    line-height: 29px;
+}
 
 
 .container{
-    display: flex;
-    margin-top: 10vh;
-    margin-left: 20vh;
-    width: 205vh;
-    height: 100vh;
-    border: 2px solid #263842;
-}
-
-.triangle{
-    margin-left: 10vh;
-    margin-top: 10vh;
-    width: 85vh;
-    height: 75vh; 
+    margin-left: 7vh;
+    margin-top: 26vh;
+    width: 80vh;
+    height: 49vh;
     background: #263842;
     border-radius: 2rem;
-    
-    
 }
+
+
 .tri{
     margin-left: 24vh;
     
@@ -79,17 +63,16 @@ transform: rotate(-90.91deg);
     
 
 .pom{
-    margin-left: 15.8vh;
-    
-    margin-top: 4.1vh;
-    height: 0px;
-    width: 0px;
-    border-left: 225px solid transparent;
-    border-right: 225px solid #FFFFFF;
-    border-top: 225px solid transparent;
-    border-bottom: 225px solid transparent;
-
+    margin-left: 15px;
+    margin-top: -252px;
+    height: -40px;
+    width: 68px;
+    border-left: 315px solid transparent;
+    border-right: 124px solid #EDC400;
+    border-top: 105px solid transparent;
+    border-bottom: 113px solid transparent;
 }
+
 .box{
     margin-left: 20.8vh;
     
@@ -138,12 +121,38 @@ transform: rotate(-90.91deg);
     border-bottom: 50px solid transparent;
 }
 .couleur{
-    color: #EDC400;
+    color: white;
     margin-left: 16.2vh;
     
     margin-top: 2.5vh;
     height: 0px;
     width: 0px;
 
+}
+svg{
+    position: absolute;
+    margin-top: 82px;
+    margin-left: -55px;;
+}
+input{ 
+    border-radius: 43px;
+    width: 242px;
+    height: 23px;
+}
+label{
+    color: white;
+}
 
+button{
+    border-radius: 51px;
+    background-color: #EDC400;
+}
+.photoTir{
+    box-sizing: border-box;
+    position: absolute;
+    width: 514px;
+    height: 350px;
+    left: 804px;
+    top: 150px;
+    border-radius: 50px;
 }
