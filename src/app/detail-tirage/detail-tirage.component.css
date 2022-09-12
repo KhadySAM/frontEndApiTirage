@@ -1,0 +1,32 @@
+.tableD{
+    
+    display: table;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: -91px;
+    border-collapse: separate;
+    border-spacing: 27px;
+    border: #263842;
+    border-collapse: 45px;
+    box-sizing: border-box;
+}
+.maTable{
+    margin-top: 197px;
+    margin-right: 46px;
+    margin-left: 85px
+ 
+}
+.detailListe{
+    box-sizing: border-box;
+    position: absolute;
+    width: 514px;
+    height: 350px;
+    left: 804px;
+    top: 150px;
+    border-radius: 50px;
+}
+.titre1{
+    position: absolute;
+    margin-top: -22px;
+    margin-left: 38px
+}

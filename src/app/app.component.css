@@ -31,18 +31,25 @@ li {
 }
 ul li a:hover {
 
-    background-color:gray;
+    background-color:white;
     border-color:#EDC400;
 } 
 .acc{
     position: absolute;
-    right: 170px;
+    right: 317px;
     top: 35px;
 }
 .tir{
     position: absolute;
-    right: 42px;
+    right: 190px;
     top: 35px;
+}
+
+.detailTir{
+    position: absolute;
+    right: 63px;
+    top: 35px;
+
 }
 
 .logo{
