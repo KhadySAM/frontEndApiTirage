@@ -1,16 +1,28 @@
 .tableD{
     
-    display: table;
-    position: absolute;
-    margin-top: 9px;
-    margin-left: -91px;
-    border-collapse: separate;
-    border-spacing: 27px;
-    border: #263842;
-    border-collapse: 45px;
-    box-sizing: border-box;
+    border-collapse: collapse;
+    min-width: 400px;
+    width: auto;
+    box-shadow: 0px 5px 50px rgb(0 0 0 / 15%);
+    cursor: pointer;
+    margin: 224px auto;
+    margin-left: 93px;
+    border: 2px solid #263842;
+    margin-top: 259px;
 }
-.maTable{
+thead tr{
+    background-color: #263842;
+    color: white;
+    text-align: left;
+}
+th, td{
+    padding: 15px 20px;
+}
+tbody, tr, td, th{
+    border: 1px solid #ddd;
+
+}
+.headTable{
     margin-top: 197px;
     margin-right: 46px;
     margin-left: 85px
@@ -27,6 +39,6 @@
 }
 .titre1{
     position: absolute;
-    margin-top: -22px;
-    margin-left: 38px
+    margin-top: -65px;
+    margin-left: 230px;
 }
