@@ -8,38 +8,29 @@
         </div>
     </div>
 </div>
-    <div class="container1 row">
-        <div class="col-8">
-            <form action="" method="post" class="formulaire">
-                <div>
-                    <label for="importer">Importer une liste</label>
-                    <input type="file" name="import" placeholder="Importer liste">
-                </div>
-                <div>
-                    <label for="liste">Choix de la liste </label>
-                    <select name="liste" id="" required>
-                        <option value="" disabled selected hidden></option>
-                        <option value="">liste1</option>
-                        <option value="">liste2</option>
-                        <option value="">liste3</option>
-                        <option value="">liste4</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="tirage">Libelle</label><br>
-                    <input type="text" name="libelletir" placeholder="libelle du tirage*" required>
-                </div>
-                <div>
-                    <label for="nbre">Nombre à tirer</label>
-                    <input type="number" name="nbrePost" placeholder="10"  required>
-                </div>
-                <div>
-                    <button type="submit">Trier</button>
-                </div>
-            </form>
-        </div>
-      
-    </div>
+<div><h1>Effectuez Tirage !</h1></div>
+<div class="container1">
+    <form action="" method="post" class="form1">
+        <label for="importer">Importer une liste</label>
+        <input type="file" name="import" placeholder="Importer liste">
+        <label for="libList" required>Libelle liste*</label>
+        <input type="text" name="libList" placeholder="libelle" required>
+        <button type="envoyer">Importer</button>
+    </form>
+</div>
+<div class="contenair2">
+    <form action="" method="post" class="form2">
+        <label for="liste">Quelle voulez-vous tirer?</label>
+        <input type="text" name="libListAt" placeholder="libelle liste" required>
+
+        <label for="trg">Libelle tirage</label>
+        <input type="text" name="trg" placeholder="libelle" required>
+
+        <label for="nbAt">Nombre de postulant à tirer</label>
+        <input type="number" name="nbAt" placeholder="10" required>
+        <button type="submit">Trier</button>
+    </form>
+</div>
     <div class="pom"></div>
     <div class="image">
         <img src="assets/image/tiragePhoto.jpg" alt="tirageAusort" class="photoTir">
