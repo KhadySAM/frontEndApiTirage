@@ -12,28 +12,50 @@ transform: rotate(-90.91deg);
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin-top: -275px;
-    margin-left: 128px;
+    margin-left: 116px;
     width: 16px;
-    line-height: 29px;
+    line-height: 16px;
+    margin-top: -394px;
+
+
+
+}
+.col-8{
+    padding: 10px;
+}
+.col-8 form{
+    display: flex;
+    flex-direction: column;
+}
+.col-8 form .liblist1{
+    display: flex;
+    flex-direction: column;
 }
 .container{
-    margin-left: 7vh;
-    margin-top: 26vh;
-    width: 80vh;
-    height: 49vh;
+    margin-left: 2vh;
+    margin-top: 21vh;
+    width: 71vh;
+    height: 66vh;
     background: #263842;
     border-radius: 2rem;
+    
+
+}
+feuille de style de l’agent utilisateur
+div {
+    display: block;
 }
 .pom{
-    margin-left: 15px;
-    margin-top: -252px;
+    margin-left: 11px;
+    margin-top: 120px;
     height: -40px;
-    width: 68px;
-    border-left: 315px solid transparent;
-    border-right: 124px solid #EDC400;
-    border-top: 105px solid transparent;
-    border-bottom: 113px solid transparent;
+    width: 37px;
+    border-left: 6px solid transparent;
+    border-right: 94px solid #EDC400;
+    border-top: 144px solid transparent;
+    border-bottom: 107px solid transparent;
+    
+    
 }
 
 .box{
@@ -72,6 +94,7 @@ transform: rotate(-90.91deg);
     border-bottom: 20px solid #EDC400;
     border-radius: 1rem; 
 }
+
 .pom1{
     margin-left: 24.2vh;
     
@@ -84,31 +107,44 @@ transform: rotate(-90.91deg);
     border-bottom: 50px solid transparent;
 }
 .couleur{
-    color: white;
-    margin-left: 16.2vh;
-    
-    margin-top: 2.5vh;
-    height: 0px;
-    width: 0px;
+    color: #EDC400;
+    margin-left: 18vh;
+    margin-bottom: 20vh;
+    margin-right: 120vh;
+    margin-top: -4.8vh;
+    height: 0vh;
+    width: 0vh;
+    position: absolute;
 
 }
 svg{
     position: absolute;
-    margin-top: 82px;
-    margin-left: -55px;;
+    margin-top: 60px;
+    margin-left: -16px;
+
 }
 input{ 
     border-radius: 43px;
-    width: 242px;
-    height: 23px;
-}
-label{
-    color: white;
+    width: 192px;
+    height: 27px;
+    border-radius: 52px;
+    border-left: 938px;
+    margin-top: 31px;
+    margin-bottom: 0px;
+    margin-left: 8vh;
+    margin-right: -11vh;
+    background-color: #FFFFFF;
 }
 
+
 button{
-    border-radius: 51px;
+    border-radius: 2px;
     background-color: #EDC400;
+    width: 12vh;
+    margin-top: 80vh;
+    margin-left: 28vh;
+    margin-right: -7vh;
+    margin-top: 3vh;
 }
 .photoTir{
     box-sizing: border-box;
@@ -116,6 +152,26 @@ button{
     width: 514px;
     height: 350px;
     left: 804px;
+
     top: 150px;
     border-radius: 50px;
+}
+
+
+
+.liblist1{
+    display: flex;
+    flex-direction: column;
+   
+}
+.hhh{
+    color: white;
+    margin-left: 00px;
+    margin-top: 0.5vh;
+    position: absolute;
+    margin-left: -23px;
+}
+.titre2{
+    margin-left:100px;
+    margin-top: 0vh;
 }
