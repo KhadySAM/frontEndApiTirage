@@ -1,0 +1,30 @@
+.titreTir{
+    min-width: 400px;
+    width: 85%;
+    cursor: pointer;
+    margin: 224px auto;
+    margin-left: 89px;
+    margin-top: 159px;
+    text-align: center;
+    color: #263842;
+    font-family: serif
+}
+.tableTir{
+    position: absolute;
+    margin-top: -213px;
+    margin-left: 88px;
+    width: 85%;
+    height: auto;
+}
+thead tr{
+    background-color: #263842;
+    color: white;
+    text-align: left;
+}
+th, td{
+    padding: 15px 20px;
+}
+tbody, tr, td, th{
+    border: 1px solid #ddd;
+
+}

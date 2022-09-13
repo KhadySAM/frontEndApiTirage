@@ -1,0 +1,21 @@
+<h1 class="titreTir">Résultat du tirage !</h1>
+    <table class="tableTir">
+      <thead>
+        <tr>
+          <th>Identifiant postulant</th>
+          <th>Mail</th>
+          <th>Nom</th>
+          <th>Tel</th>
+          <th>Prenom</th>
+          <th>Identifiant tirage</th>
+        </tr>
+      </thead>
+        <tr  *ngFor= "let posttirer of posttirers">
+          <td>{{posttirer.id_postTirer}}</td>
+          <td>{{posttirer.mail}}</td>
+          <td>{{posttirer.nom}}</td>
+          <td>{{posttirer.numero}}</td>
+          <td>{{posttirer.prenom}}</td>
+          <td>{{posttirer.id_tirage}}</td>
+        </tr>
+    </table>

@@ -8,28 +8,31 @@
         </div>
     </div>
 </div>
-    <div class="container1 row">
-        <div class="col-8">
-            
-                <form action="" method="post" class="formulaire1" >
-                    
-                    
-                        <label class="importer">Importer une nouvelle liste</label><br>
-                    
-                        <input type="file">
-                        
-                       <label class="libelleliste">Libelle liste*</label><br>
-                            <input type="text" name="libelleliste" placeholder="libelle liste" required>
-                                <input type="text" name="libelleliste" placeholder="libelle liste" required>
-                                     <br><br>
-                                    <label for="nbre tirage"> Nombre de Tirage</label><br>
-                                    <input type="text" name="libelleliste" placeholder="libelle liste" required>
-                </form>
-            </div>
-        </div>
-                 <button type="submit">Trier</button>
-                <div class="pom"></div>
-            <div class="image">
+<div><h1>Effectuez Tirage !</h1></div>
+<div class="container1">
+    <form action="" method="post" class="form1">
+        <label for="importer">Importer une liste</label>
+        <input type="file" name="import" placeholder="Importer liste">
+        <label for="libList" required>Libelle liste*</label>
+        <input type="text" name="libList" placeholder="libelle" required>
+        <button type="envoyer">Importer</button>
+    </form>
+</div>
+<div class="contenair2">
+    <form action="" method="post" class="form2">
+        <label for="liste">Quelle voulez-vous tirer?</label>
+        <input type="text" name="libListAt" placeholder="libelle liste" required>
+
+        <label for="trg">Libelle tirage</label>
+        <input type="text" name="trg" placeholder="libelle" required>
+
+        <label for="nbAt">Nombre de postulant à tirer</label>
+        <input type="number" name="nbAt" placeholder="10" required>
+        <button type="submit" routerLink="/resultat-tirage" routerLinkActive="active">Trier</button>
+    </form>
+</div>
+    <div class="pom"></div>
+    <div class="image">
         <img src="assets/image/tiragePhoto.jpg" alt="tirageAusort" class="photoTir">
     </div>
 <!-- <div class="pom1"></div>-->
