@@ -21,7 +21,6 @@ export class DetailTirageComponent implements OnInit {
 
     } );
     
-    
     this.service.getnombre(this.listposts).subscribe( data =>{
 
       this.nombre = data;
