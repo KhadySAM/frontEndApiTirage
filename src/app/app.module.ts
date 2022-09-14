@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { TirageComponent } from './tirage/tirage.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { DetailTirageComponent } from './detail-tirage/detail-tirage.component';
-import { ResultatTirageComponent } from './resultat-tirage/resultat-tirage.component'
+import { ResultatTirageComponent } from './resultat-tirage/resultat-tirage.component';
+import { DetailListeComponent } from './detail-liste/detail-liste.component'
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ResultatTirageComponent } from './resultat-tirage/resultat-tirage.compo
     AccueilComponent,
     DetailTirageComponent,
     ResultatTirageComponent,
+    DetailListeComponent,
   
   ],
   imports: [

@@ -1,3 +1,8 @@
+.titre1{
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 230px;
+}
 .tableD{
     border-collapse: collapse;
     min-width: 400px;
@@ -20,18 +25,4 @@ th, td{
 tbody, tr, td, th{
     border: 1px solid #ddd;
 
-}
-.detailListe{
-    box-sizing: border-box;
-    position: absolute;
-    width: 514px;
-    height: 350px;
-    left: 804px;
-    top: 150px;
-    border-radius: 50px;
-}
-.titre1{
-    position: absolute;
-    margin-top: -65px;
-    margin-left: 230px;
 }
