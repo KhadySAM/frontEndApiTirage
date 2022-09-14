@@ -1,6 +1,6 @@
 .rectangle{
-    margin-left: 8vh;
-    margin-top: 46vh;
+        margin-left: 8vh;
+    margin-top: 50vh;
     width: 40vh;
     height: 17vh;
     background-color: #EDC400;
@@ -8,8 +8,9 @@
   
 }
 .rectangle1{
+    
     margin-left: 8vh;
-    margin-top: 27vh;
+    margin-top: 26vh;
     width: 40vh;
     height: 17vh;
     background-color: #EDC400;
@@ -17,10 +18,10 @@
 
 
 .rectangle2{
-    margin-left: 20vh;
-    margin-top: 27vh;
+    margin-left: 21vh;
+    margin-top: 20vh;
     width: 20vh;
-    height: 10vh;
+    height: 12vh;
     background-color: #EDC400;
     border-radius: 4vh;
 
@@ -48,14 +49,14 @@
 }
 
 .pom2{
-    margin-left: 11vh;
+    margin-left: 10vh;
     margin-top: -16vh;
-    height: 0px;
+    height: 1px;
     width: 0px;
     border-left: 0vh solid transparent;
-    border-right: 55px solid #263842;
-    border-top: 29px solid transparent;
-    border-bottom: 33px solid transparent;
+    border-right: 50px solid #263842;
+    border-top: 36px solid transparent;
+    border-bottom: 38px solid transparent;
     
 }
 
@@ -65,6 +66,7 @@
     align-content: flex-end;
     margin-top: -82px;
     font-family: sans-serif;
+    width: 10vh;
 }
 .textNbreTirage{
     display: flex;
@@ -72,18 +74,22 @@
     align-content: flex-end;
     margin-top: 39px;
     font-family: sans-serif;
-    margin-right: 87px;
-    margin-top: 44px;
+    margin-right: 128px;
+    margin-top: 36px;
+    width: 10vh;
+    font-size: 8vh;
 }
 .textTirageEf{
     display: flex;
     justify-content: center;
     align-content: flex-end;
     position: absolute;
-    margin-top: 104px;
+    margin-top: 85px;
     margin-right: 131px;
-    margin-left: 60px;
+    margin-left: 21px;
     font-family: sans-serif;
+    width: 10vh;
+    font-size: 3vh;
 }
 
 .textListe{
@@ -92,6 +98,7 @@
     align-content: flex-end;
     margin-top: 44px;
     font-family: sans-serif;
+    width: 10vh;
 }
 
 .textNbreListe{
@@ -102,7 +109,9 @@
     font-family: sans-serif;
     position: absolute;
     margin-right: 136px;
-    margin-left: 60px;
+    margin-left: 5px;
+    width: 10vh;
+    font-size: 8vh;
 }
 .listTirer{
     display: flex;
@@ -113,6 +122,7 @@
     margin-right: 161px;
     margin-left: 60px;
     font-family: sans-serif;
+    width: 35vh;
 }
 .textNewTir1{
     display: flex;
@@ -120,25 +130,30 @@
     align-content: flex-end;
     margin-top: 44px;
     font-family: sans-serif;
+    width: 10vh;
 }
 .newTir1{
     display: flex;
     justify-content: center;
     align-content: flex-end;
-    margin-top: -70px;
+    margin-top: -65px;
     font-family: sans-serif;
     position: absolute;
     margin-right: 161px;
-    margin-left: 60px;
+    margin-left: 39px;
+    width: 10vh;
+    font-size: 2.5vh;
 }
 .newTir2{
     display: flex;
     justify-content: center;
     align-content: flex-end;
-    margin-top: -52px;
+    margin-top: -37px;
     font-family: sans-serif;
     margin-right: 29px;
-    margin-left: -29px;
+    margin-left: -94px;
+    width: 10vh;
+    font-size: 2.5vh;
 }
 .rectangle3{
     width: 540px;
@@ -159,9 +174,9 @@
     font-size: xx-large;
 }
 .container{
-    margin-top: -360px;
-    margin-right: 18px;
-    margin-left: 783px
+    margin-top: -425px;
+    margin-right: 98px;
+    margin-left: 813px
 }
 .table{
     display: table;
@@ -169,10 +184,17 @@
     box-sizing: border-box;
     text-indent: initial;
     border-spacing: 2px;
-    margin-left: 28px;
-    height: 39px;
+    margin-left: -260px;
+    height: 333px;
+    width: 110vh;
     border: #263842;
     border-collapse: collapse;
+}
+h1{
+    margin-left: -38vh;
+    margin-left: -8vh;
+    margin-top: 0vh;
+    
 }
 
 tr{
@@ -190,8 +212,8 @@ th, td{
     justify-content: center;
     align-content: flex-end;
     position: absolute;
-    margin-top: 13px;
-    margin-left: 906px;
+    margin-top: 2px;
+    margin-left: 1186px;
     font-family: sans-serif;
 
 }
@@ -210,4 +232,8 @@ button{
     margin-top: 13px;
     margin-left: 971px;
 
+}
+.h5{
+    margin-left: 0vh;
+    margin-top: 0vh;
 }

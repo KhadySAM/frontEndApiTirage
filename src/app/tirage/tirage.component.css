@@ -18,11 +18,13 @@ transform: rotate(-90.91deg);
     line-height: 29px;
 }
 .form1{
-    width: 259px;
-    border: 1px solid white;
-    margin-top: -156px;
-    margin-left: -37px;
+    width: 251px;
+    border-right: 124px solid #EDC400;
+    border: 2px solid #EDC400;
+    margin-top: -424px;
+    margin-left: 236px;
     border-radius: 12px;
+
 }
 .contenair2{
     display: flex;
@@ -36,13 +38,21 @@ transform: rotate(-90.91deg);
 }
 .form2{
     width: 312px;
-    margin-top: 24px;
-    margin-left: -33px;
-    border: 1px solid white;
+    margin-top: 315px;
+    margin-left: 24px;
+    border: 2px solid #EDC400;
     border-radius: 12px;
 }
+.form3{
+    width: 312px;
+    margin-top: 315px;
+    margin-left: 111px;
+    border: 2px solid #EDC400;
+    border-radius: 12px;
+    
+}
 .container{
-    margin-left: 7vh;
+    margin-left: 19vh;
     margin-top: 22vh;
     width: 72vh;
     height: 67vh;
@@ -50,14 +60,14 @@ transform: rotate(-90.91deg);
     border-radius: 2rem;
 }
 .pom{
-    margin-left: -50px;
-    margin-top: -390px;
+    margin-left: -9px;
+    margin-top: -89px;
     height: -40px;
-    width: 130px;
-    border-left: 315px solid transparent;
-    border-right: 124px solid #EDC400;
-    border-top: 154px solid transparent;
-    border-bottom: 154px solid transparent;
+    width: 164px;
+    border-left: 316px solid transparent;
+    border-right: 123px solid #EDC400;
+    border-top: 111px solid transparent;
+    border-bottom: 95px solid transparent;
 }
 
 .box{
@@ -118,8 +128,9 @@ transform: rotate(-90.91deg);
 }
 svg{
     position: absolute;
-    margin-top: 15px;
-    margin-left: 60px;
+    margin-top: 21px;
+    margin-left: 137px;
+    color:#EDC400;
 }
 input{
     border-radius: 43px;
@@ -133,19 +144,23 @@ label{
 button{
     border-radius: 51px;
     background-color: #EDC400;
+    margin-left: 0vh;
+    margin-top: 1vh;
 }
 .photoTir{
     box-sizing: border-box;
     position: absolute;
-    width: 514px;
-    height: 364px;
-    left: 804px;
-    top: 200px;
+    width: 346px;
+    height: 430px;
+    left: 840px;
+    top: 154px;
     border-radius: 14px;
 }
 
+
 h1{
     position: absolute;
-    top: 124px;
-    margin-left: 928px;
+    top: 175px;
+    margin-left: 602px;
+    
 }

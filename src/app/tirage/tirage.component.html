@@ -9,17 +9,17 @@
     </div>
 </div>
 <div><h1>Effectuez Tirage !</h1></div>
-<div class="container1">
-    <form action="" method="post" class="form1">
-        <label for="importer">Importer une liste</label>
-        <input type="file" name="import" placeholder="Importer liste">
-        <label for="libList" required>Libelle liste*</label>
-        <input type="text" name="libList" placeholder="libelle" required>
+<div class="container1" class="bordure">
+    <form action="" method="post" class="form1" >
+        <label for="importer">Importer une liste</label><br><br>
+        <input type="file" name="import" placeholder="Importer liste"><br><br>
+        <label for="libList" required>Libelle liste*</label><br>
+        <input type="text" name="libList" placeholder="libelle" required><br>
         <button type="envoyer">Importer</button>
     </form>
 </div>
 <div class="contenair2">
-    <form action="" method="post" class="form2">
+    <form action="" method="post" class="form2" class="form3">
         <label for="liste">Quelle voulez-vous tirer?</label>
         <input type="text" name="libListAt" placeholder="libelle liste" required>
 
@@ -31,6 +31,7 @@
         <button type="submit" routerLink="/resultat-tirage" routerLinkActive="active">Trier</button>
     </form>
 </div>
+    
     <div class="pom"></div>
     <div class="image">
         <img src="assets/image/tiragePhoto.jpg" alt="tirageAusort" class="photoTir">
