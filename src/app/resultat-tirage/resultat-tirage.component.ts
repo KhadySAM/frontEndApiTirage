@@ -4,7 +4,6 @@ import { Posttirer } from '../posttirer';
 
 import { PosttirerService } from '../posttirer.service';
 
-
 @Component({
   selector: 'app-resultat-tirage',
   templateUrl: './resultat-tirage.component.html',
@@ -22,11 +21,6 @@ export class ResultatTirageComponent implements OnInit {
       this.posttirers = data;
     })
 
-
-  constructor() { }
-
-  ngOnInit(): void {
-
-  }
-
+ 
+}
 }

@@ -23,7 +23,8 @@ import { ResultatTirageComponent } from './resultat-tirage/resultat-tirage.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

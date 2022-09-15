@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, Routes } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-tirage',
@@ -8,9 +9,12 @@ import { Router } from '@angular/router';
 })
 export class TirageComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private Routes: Routes) { }
 
   ngOnInit(): void {
+  }
+  onGetProducts(){
+    
   }
 
 }
