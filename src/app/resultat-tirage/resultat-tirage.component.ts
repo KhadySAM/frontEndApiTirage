@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Posttirer } from '../posttirer';
 
 import { PosttirerService } from '../posttirer.service';
+
 
 @Component({
   selector: 'app-resultat-tirage',
@@ -9,6 +11,7 @@ import { PosttirerService } from '../posttirer.service';
   styleUrls: ['./resultat-tirage.component.css']
 })
 export class ResultatTirageComponent implements OnInit {
+
 
   posttirers: any;
   constructor(private service: PosttirerService) { }
@@ -18,6 +21,11 @@ export class ResultatTirageComponent implements OnInit {
     this.service.getPosttirer().subscribe( data =>{
       this.posttirers = data;
     })
+
+
+  constructor() { }
+
+  ngOnInit(): void {
 
   }
 
