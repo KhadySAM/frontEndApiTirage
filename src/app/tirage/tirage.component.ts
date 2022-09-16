@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, Routes } from '@angular/router';
+import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -9,12 +9,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TirageComponent implements OnInit {
 
-  constructor(private Routes: Routes) { }
+  constructor(private http : HttpClient) { }
 
   ngOnInit(): void {
   }
   onGetProducts(){
-    
+    this.http.get('')
   }
 
 }

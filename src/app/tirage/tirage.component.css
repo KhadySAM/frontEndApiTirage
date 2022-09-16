@@ -22,7 +22,7 @@ transform: rotate(-90.91deg);
     border-right: 124px solid #EDC400;
     border: 2px solid #EDC400;
     margin-top: -424px;
-    margin-left: 236px;
+    margin-left: 230px;
     border-radius: 12px;
 
 }
@@ -46,7 +46,7 @@ transform: rotate(-90.91deg);
 .form3{
     width: 312px;
     margin-top: 315px;
-    margin-left: 111px;
+    margin-left: 103px;
     border: 2px solid #EDC400;
     border-radius: 12px;
     
@@ -68,6 +68,24 @@ transform: rotate(-90.91deg);
     border-right: 123px solid #EDC400;
     border-top: 111px solid transparent;
     border-bottom: 95px solid transparent;
+}
+.segond{
+    height: 3017px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -77.9vh;
+    margin-top: -30vh;
+    width: 226vh;
+}
+.deux{
+    height: 2px;
+    
+    border-left: 100px solid #EDC400;
+    border-right: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
 }
 
 .box{
@@ -117,6 +135,17 @@ transform: rotate(-90.91deg);
     border-top: 50px solid transparent;
     border-bottom: 50px solid transparent;
 }
+.pom2{
+    margin-left: 10vh;
+    margin-top: -5vh;
+    height: 0px;
+    width: 2px;
+    border-left: 0vh solid transparent;
+    border-right: 50px solid #263842;
+    border-top: 40px solid transparent;
+    border-bottom: 32px solid transparent;  
+}
+
 .couleur{
     color: white;
     margin-left: 16.2vh;
@@ -124,13 +153,45 @@ transform: rotate(-90.91deg);
     margin-top: 2.5vh;
     height: 0px;
     width: 0px;
+}
+.newTir2{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    margin-top: -37px;
+    font-family: sans-serif;
+    margin-right: 29px;
+    margin-left: -94px;
+    width: 10vh;
+    font-size: 2.5vh;
+}
+.newTir1{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    margin-top: -32px;
+    font-family: sans-serif;
+    position: absolute;
+    margin-right: 161px;
+    margin-left: -63px;
+    width: 10vh;
+    font-size: 2.5vh;
+}
+.rectangle2{
+    margin-left: 102vh;
+    margin-top: -427vh;
+    width: 20vh;
+    height: 12vh;
+    background-color: #EDC400;
+    border-radius: 4vh;
 
 }
 svg{
     position: absolute;
-    margin-top: 21px;
-    margin-left: 137px;
-    color:#EDC400;
+    margin-top: 9px;
+    margin-left: 145px;
+    color: #EDC400;
+    width: 4.3vh;
 }
 input{
     border-radius: 43px;
@@ -151,16 +212,16 @@ button{
     box-sizing: border-box;
     position: absolute;
     width: 346px;
-    height: 430px;
-    left: 840px;
-    top: 154px;
+    height: 355px;
+    left: 900px;
+    top: 229px;
     border-radius: 14px;
 }
 
 
 h1{
     position: absolute;
-    top: 175px;
-    margin-left: 602px;
+    top: 140px;
+    margin-left: 940px;
     
 }
