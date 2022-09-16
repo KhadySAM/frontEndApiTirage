@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DetListTir } from '../det-list-tir';
 import { DetListTirService } from '../det-list-tir.service';
 
@@ -15,19 +16,35 @@ export class DetailListeComponent implements OnInit {
   np:number=0
   idnp:number=0
   Ntirage:number=0
+  tirage:any
 
-  constructor(private service: DetListTirService ) { }
+  constructor(private service: DetListTirService, private route:ActivatedRoute, private router:Router ) { }
 
   ngOnInit(): void {
-    this.service.getDetListTir(this.id).subscribe(data=>{
+
+    this.idnp = this.route.snapshot.params['idnp']
+    console.log(this.id)
+    this.service.getListeParTirage(this.id).subscribe(data=>{
+      console.log(data);
+      this.tirage=data;
+    })
+
+
+
+
+
+    this.service.getDetListTir(this.idnp).subscribe(data=>{
       console.log(data);
       this.detListTirs=data;
-      for (const n of this.detListTirs) {
-        this.Ntirage +=1;
-      }
     })
 
     
   }
+
+  goToResultatTirage(id:number){
+    console.log(id);
+    return this.router.navigate(['resultat-tirage', id])
+  }
+  
 
 }

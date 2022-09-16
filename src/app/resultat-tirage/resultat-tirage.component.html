@@ -1,4 +1,6 @@
 <h1 class="titreTir">Résultat du tirage !</h1>
+
+<div>
     <table class="tableTir">
       <thead>
         <tr>
@@ -7,15 +9,16 @@
           <th>Nom</th>
           <th>Tel</th>
           <th>Prenom</th>
-          <th>Identifiant tirage</th>
         </tr>
       </thead>
-        <tr  *ngFor= "let posttirer of posttirers">
-          <td>{{posttirer.id_postTirer}}</td>
-          <td>{{posttirer.mail}}</td>
-          <td>{{posttirer.nom}}</td>
-          <td>{{posttirer.numero}}</td>
-          <td>{{posttirer.prenom}}</td>
-          <td>{{posttirer.id_tirage}}</td>
+        <tr  *ngFor= "let posttirer of posttirers | paginate:{itemsPerPage :5, currentPage:p}; let id = index" >
+          <td>{{posttirer[0]}}</td>
+          <td>{{posttirer[1]}}</td>
+          <td>{{posttirer[2]}}</td>
+          <td>{{posttirer[3]}}</td>
+          <td>{{posttirer[4]}}</td>
         </tr>
     </table>
+    <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls> 
+  </div>
+ 

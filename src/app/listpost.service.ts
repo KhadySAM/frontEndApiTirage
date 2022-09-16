@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs';
 import { Listpost } from './listpost';
 
@@ -8,14 +8,17 @@ import { Listpost } from './listpost';
 })
 export class ListpostService {
 
-
   constructor(private http:HttpClient) { }
-  getListpost () : Observable<object>
+
+  url="http://localhost:8080/Posttirer/postTirerParTirage"
+  getPosttirerParTirage(id:number){
+    return this.http.get(`${this.url}/${id}`)
+  }
+
+  urlt="http://localhost:8080/Listpost/Afficher"
+  
+  getListpost() : Observable<object>
   {
     return this.http.get("http://localhost:8080/Listpost/Afficher")
-  }
-  getnombre (libelle: string) : Observable<object>
-  {
-    return this.http.get(`http://localhost:8080/Tirage/affichernbtirage/${libelle}`)
   }
 }

@@ -14,13 +14,18 @@ export class DetListTirService {
 
   nPostT="http://localhost:8080/Tirage/nbrePostTirer"
   getNbrePostTir(id:number):Observable<Object>{
-    return this.http.get(`${this.nPostT}/1`);
+    return this.http.get(`${this.nPostT}/${id}`);
   }
 
   urlPT="http://localhost:8080/Tirage/tirageParList"
-  getDetListTir(id:number) : Observable<Object>
+  getDetListTir(idnp:number) : Observable<Object>
   {
-    return this.http.get(`${this.urlPT}/1`);
+    return this.http.get(`${this.urlPT}/${idnp}`);
+  }
+
+  url="http://localhost:8080/Listpost/nbrePostT"
+  getListeParTirage(id:number):Observable<Object>{
+    return this.http.get(`${this.url}/${id}`);
   }
  
 }

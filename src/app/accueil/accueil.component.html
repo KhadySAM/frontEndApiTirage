@@ -1,9 +1,9 @@
 <div class="rectangle">
-        <div class="pom"> <h3 class="textTrie"> <span class="textNbreTirage">25</span> <span class="textTirageEf">Tirage effectués</span></h3> </div>
+        <div class="pom" > <h3 class="textTrie" > <span class="textNbreTirage" >{{nbretirage}}</span> <span class="textTirageEf">Tirage effectués</span></h3> </div>
 </div>
 
 <div class="rectangle1">
-    <div class="pom1"> <h3 class="textListe"> <span class="textNbreListe">06</span> <span class="listTirer">Liste tirées</span></h3> </div>
+    <div class="pom1"> <h3 class="textListe"> <span class="textNbreListe">{{listtirers.length}}</span> <span class="listTirer">Liste tirées</span></h3> </div>
 </div>
 
 <div class="rectangle2">
@@ -11,45 +11,32 @@
 </div>
 
 <div class="container">
-    <h1>Détails des liste tirées</h1>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>N°</th>
-          <th> Libelle liste</th>
-          <th>Nombre de tirage / liste</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td routerLink="/detail-liste" routerLinkActive="active">Liste 1</td>
-          <td>05</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Liste 2</td>
-          <td>06</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Liste 3</td>
-          <td>05</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Liste 4</td>
-            <td>05</td>
-          </tr>
-        </tbody>
-    </table>
+  <h1 class="titre1">Détails des liste tirées</h1>
+  <table class="tableD">
+    <thead>
+      <tr>
+        <th>N°</th>
+        <th>Libelle liste</th>
+        <th>Date d'importation</th>
+       <th>Nombre tirage</th>
+       <th>Action</th>
+      </tr>
+    </thead>
+      <tr *ngFor= "let listTirer of listtirers | paginate:{itemsPerPage :5, currentPage:p}; let id = index">
+        <td>{{listTirer[0]}}</td>
+        <td>{{listTirer[1]}}</td>
+        <td>{{listTirer[2]}}</td>
+        <td>{{tiragesurliste}}</td>
+       <!-- <td>{{nombre}}</td> -->
+        <td><a (click)="goToDetailTirage(listTirer[0])" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+          <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+          <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+        </svg></a></td>
+      </tr>
+  </table>
+  
 </div>
 
-<div class="pagination">1/2 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
-  </svg></div>
+<pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls> 
 
-  <div class="voirPlus"><button>Voir <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
-    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-  </svg></button></div>
+  

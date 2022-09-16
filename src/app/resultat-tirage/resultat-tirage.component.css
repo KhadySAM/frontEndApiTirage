@@ -28,3 +28,10 @@ tbody, tr, td, th{
     border: 1px solid #ddd;
 
 }
+
+.Kadi{
+    margin-bottom: -10vh;
+    flex: 5;
+    background: red;
+    margin: 0px 25px 25px 25px;
+}

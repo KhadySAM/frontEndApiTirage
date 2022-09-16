@@ -14,4 +14,9 @@ export class PosttirerService {
     return this.http.get("http://localhost:8080/Posttirer/afficherpostulanttire")
   }
   
+  url="http://localhost:8080/Posttirer/postTirerParTirage"
+  getPosttirerParTirage(id:number){
+    return this.http.get(`${this.url}/${id}`)
+  }
+  
 }

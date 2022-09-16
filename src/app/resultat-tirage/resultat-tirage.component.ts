@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Posttirer } from '../posttirer';
 
 import { PosttirerService } from '../posttirer.service';
@@ -11,11 +12,13 @@ import { PosttirerService } from '../posttirer.service';
 export class ResultatTirageComponent implements OnInit {
 
   posttirers: any;
-  constructor(private service: PosttirerService) { }
+  p: number=1;
+  id: number=0
+  constructor(private service: PosttirerService, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
-
-    this.service.getPosttirer().subscribe( data =>{
+    this.id= this.route.snapshot.params['id'];
+    this.service.getPosttirerParTirage(this.id).subscribe( data =>{
       this.posttirers = data;
     })
 
