@@ -9,6 +9,8 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ResultatTirageComponent } from './resultat-tirage/resultat-tirage.component';
 import { DetailListeComponent } from './detail-liste/detail-liste.component'
 import { NgxPaginationModule } from 'ngx-pagination';
+//import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -17,13 +19,14 @@ import { NgxPaginationModule } from 'ngx-pagination';
     AccueilComponent,
     ResultatTirageComponent,
     DetailListeComponent,
+    
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
 
   ],
   providers: [],

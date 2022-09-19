@@ -2,6 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TirageComponent } from './tirage.component';
 
+//import { FormsModule } from '@angular/forms';
+
 describe('TirageComponent', () => {
   let component: TirageComponent;
   let fixture: ComponentFixture<TirageComponent>;
