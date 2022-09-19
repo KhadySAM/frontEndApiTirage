@@ -9,6 +9,8 @@ import { Tirageclass } from './tirageclass';
 export class TirageserviceService {
 
   constructor(private http:HttpClient) { }
+
+
   getTirageretourlist():Observable<object>{
     return this.http.get("http://localhost:8080/Tirage/postTirerParIdTirage/$idTirage")
   }

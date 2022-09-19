@@ -9,19 +9,26 @@
     </div>
 </div>
 <div><h1>Effectuez Tirage !</h1></div>
+
+
 <div class="container1">
     <form action="" method="post" class="form1">
         <label for="importer">Importer une liste</label>
-        <input type="file" name="import" placeholder="Importer liste">
-        <label for="libList" required>Libelle liste*</label>
-        <input type="text" name="libList" placeholder="libelle" required>
-        <button type="envoyer">Importer</button>
-    </form>
-</div>
-<div class="contenair2">
-    <form action=""(ngSubmit)="OnSubmit()" method="post" class="form2">
 
-        <label for="liste">Quelle voulez-vous tirer?</label>
+        <input type="file" id = "files"  (change)="televerser($event)" name ="files" placeholder="Importer liste">
+        
+        <label for="libList" required>Libelle liste*</label>
+        
+        <input type="text" [(ngModel)]="libelleliste" id="libelleliste" name="libelleliste" placeholder="libelle" required>
+        
+        <button type="submit" (click)="importerList()" >Importer</button>
+        
+    </form>
+</div> 
+<div class="contenair2">
+    <form action="" (ngSubmit)="OnSubmit()" method="post" class="form2">
+    
+    <label for="liste">Quelle voulez-vous tirer?</label>
     <input type="text" name="libListAt" placeholder="libelle liste" [(ngModel)]="libelle" required>
 
         <label for="trg">Libelle tirage</label>
