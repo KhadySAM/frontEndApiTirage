@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TirageComponent } from './tirage/tirage.component';
@@ -9,7 +8,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ResultatTirageComponent } from './resultat-tirage/resultat-tirage.component';
 import { DetailListeComponent } from './detail-liste/detail-liste.component'
 import { NgxPaginationModule } from 'ngx-pagination';
-//import { FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,6 +18,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     AccueilComponent,
     ResultatTirageComponent,
     DetailListeComponent,
+    
     
   
   ],

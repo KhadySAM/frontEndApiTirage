@@ -15,10 +15,9 @@ export class ListpostService {
     return this.http.get(`${this.url}/${id}`)
   }
 
-  urlt="http://localhost:8080/Listpost/Afficher"
-  
-  getListpost() : Observable<object>
+  getDetTirList(): Observable<object>
   {
-    return this.http.get("http://localhost:8080/Listpost/Afficher")
+    return this.http.get("http://localhost:8080/Listpost/detTirage")
   }
+  
 }

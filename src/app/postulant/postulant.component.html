@@ -1,0 +1,25 @@
+<div>
+  <table  class="postu">
+    <thead>
+      <tr>
+        <th>N°</th>
+        <th>NOM</th>
+        <th>Prenom</th>
+        <th>Tel</th>
+        <th>Mail</th>
+        <th>N° liste</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let lesPost of lesPosts" > 
+      <td>{{lesPost.id_post}}</td>   
+      <td>{{lesPost.mail}}</td>
+      <td>{{lesPost.nom}}</td>
+      <td>{{lesPost.numero}}</td>
+      <td>{{lesPost.prenom}}</td>
+      <td>{{lesPost.id_listPost}}</td>
+    </tr>
+  </table>
+  
+</div>
+
+    

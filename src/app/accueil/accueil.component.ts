@@ -15,20 +15,16 @@ import { TiragetotalService } from '../tiragetotal.service';
 export class AccueilComponent implements OnInit {
 
   p: number=1;
-
- // tiragetotal!: number;
-  nbretirage: any;
+  nbrestirage: any;
   listtirers: any;
-  tiragesurliste: any;
-  nbr: any
   id: number=0
+  detTirs: any;
 
 
   constructor(private service : ListtirerService, private services : TiragetotalService, private services1 : ListpostService,  private router:Router) { }
 
   ngOnInit(): void {
-  //  this.idt= this.route.snapshot.params['idt'];
-
+ 
     this.service.getListtire().subscribe( data =>{
       this.listtirers = data;
       console.log(data)
@@ -36,23 +32,14 @@ export class AccueilComponent implements OnInit {
     })
   
   this.services.getTiragetoltal().subscribe( data =>{
-    this.nbretirage = data;
+    this.nbrestirage = data;
     console.log(data)
   })
 
-  this.services1.getListpost()
-  .subscribe( (data) =>{
-    console.log(data);
-    this.nbr = data
-  })
-
-  this.service.getNbretiragesurlist(this.id).subscribe( data =>{
-    this.tiragesurliste = data;
+  this.services1.getDetTirList().subscribe(data =>{
+    this.detTirs = data;
     console.log(data)
-  })
-
- // this.id= this.route.snapshot.params['id'];
- 
+  }) 
 
   }
 

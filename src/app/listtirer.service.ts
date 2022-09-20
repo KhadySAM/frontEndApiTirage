@@ -12,15 +12,4 @@ export class ListtirerService {
     return this.http.get("http://localhost:8080/Tirage/listeTirer")
   }
   
-  getListpost() : Observable<object>
-  {
-    return this.http.get("http://localhost:8080/Tirage/nbreTirageListe")
-  }
-
-  urtir = "http://localhost:8080/Tirage/nbr"
-  getNbretiragesurlist (id:number) : Observable<object>
-  {
-    return this.http.get(`${this.urtir}/${id}`)
-  }
-
 }

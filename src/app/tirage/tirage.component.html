@@ -9,27 +9,33 @@
     </div>
 </div>
 <div><h1>Effectuez Tirage !</h1></div>
+
+
 <div class="container1">
     <form action="" method="post" class="form1">
         <label for="importer">Importer une liste</label>
         
         <input type="file" name="import" placeholder="Importer liste">
         <label for="libList" required>Libelle liste*</label>
-        <input type="text" name="libList" placeholder="libelle" required>
-        <button type="envoyer">Importer</button>
+        
+        <input type="text" [(ngModel)]="libelleliste" id="libelleliste" name="libelleliste" placeholder="libelle" required>
+        
+        <button type="submit" (click)="importerList()" >Importer</button>
+        
     </form>
-</div>
+</div> 
 <div class="contenair2">
-    <form action="" method="post" class="form2">
-        <label for="liste">Quelle voulez-vous tirer?</label>
-        <input type="text" name="libListAt" placeholder="libelle liste" required>
+    <form action="" (ngSubmit)="OnSubmit()" method="post" class="form2">
+    
+    <label for="liste">Quelle voulez-vous tirer?</label>
+    <input type="text" name="libListAt" placeholder="libelle liste" [(ngModel)]="libelle" required>
 
         <label for="trg">Libelle tirage</label>
-        <input type="text" name="trg" placeholder="libelle" required>
+        <input type="text" name="trg" placeholder="libelle" [(ngModel)]="tirage.libelle" required>
 
         <label for="nbAt">Nombre de postulant à tirer</label>
-        <input type="number" name="nbAt" placeholder="10" required>
-        <button type="submit" routerLink="/resultat-tirage" routerLinkActive="active">Trier</button>
+        <input type="number" name="nbAt" placeholder="10" [(ngModel)]="nombre" required>
+        <button type="submit">Trier</button>
     </form>
 </div>
     <div class="pom"></div>
