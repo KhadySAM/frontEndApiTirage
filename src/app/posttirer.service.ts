@@ -18,5 +18,7 @@ export class PosttirerService {
   getPosttirerParTirage(id:number){
     return this.http.get(`${this.url}/${id}`)
   }
+
+ 
   
 }

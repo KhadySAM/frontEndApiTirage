@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DetListTir } from '../det-list-tir';
 import { DetListTirService } from '../det-list-tir.service';
+import { ListtirerService } from '../listtirer.service';
 
 
 @Component({
@@ -15,10 +16,12 @@ export class DetailListeComponent implements OnInit {
   Kadi:any
   np:number=0
   idnp:number=0
-  Ntirage:number=0
+  //Ntirage:number=0
   tirage:any
+  Ntirage: number=0
+  nbTir:any
 
-  constructor(private service: DetListTirService, private route:ActivatedRoute, private router:Router ) { }
+  constructor(private service: DetListTirService, private services: ListtirerService, private route:ActivatedRoute, private router:Router ) { }
 
   ngOnInit(): void {
 
@@ -30,13 +33,13 @@ export class DetailListeComponent implements OnInit {
     })
 
 
-
-
-
+  
+// ici
     this.service.getDetListTir(this.idnp).subscribe(data=>{
       console.log(data);
       this.detListTirs=data;
     })
+
 
     
   }

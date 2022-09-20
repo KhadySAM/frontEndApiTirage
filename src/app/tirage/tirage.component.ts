@@ -4,7 +4,7 @@ import { Tirageclass } from '../tirageclass';
 import { TirageserviceService } from '../tirageservice.service';
 import * as xlsx from 'xlsx';
 import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
-import { from } from 'rxjs';
+import { observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { getLocaleCurrencySymbol } from '@angular/common';
 
@@ -23,7 +23,7 @@ export class TirageComponent implements OnInit {
   libelle!: any;
   tirage: Tirageclass = new Tirageclass();
   nombre: any;
-  constructor(private tirageService: TirageserviceService, private formBuilder: FormGroup, private http:HttpClient) { }
+  constructor(private tirageService: TirageserviceService, /*private formBuilder: FormGroup,*/ private http:HttpClient) { }
 
     ngOnInit(): void {
 
@@ -47,7 +47,7 @@ export class TirageComponent implements OnInit {
 
       //   alert("Veuillez verifier les differents champs")
       //  }
-        });
+        })
     }
 
   SaveTirage(){

@@ -45,6 +45,12 @@ ul li a:hover {
     top: 35px;
 }
 
+.post{
+    position: absolute;
+    right: 63px;
+    top: 35px;
+}
+
 .detailTir{
     position: absolute;
     right: 63px;

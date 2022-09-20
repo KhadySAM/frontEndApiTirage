@@ -10,7 +10,8 @@ import { ResultatTirageComponent } from './resultat-tirage/resultat-tirage.compo
 import { DetailListeComponent } from './detail-liste/detail-liste.component'
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
-import { ListpostComponent } from './listpost/listpost.component';
+import { PostulantComponent } from './postulant/postulant.component';
+//import { ListpostComponent } from './listpost/listpost.component';
 // import { ListepostulantComponent } from './listepostulant/listepostulant.component';
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ListpostComponent } from './listpost/listpost.component';
     AccueilComponent,
     ResultatTirageComponent,
     DetailListeComponent,
-    ListpostComponent,
+    PostulantComponent,
+   // ListpostComponent,
    // ListepostulantComponent,
   
   ],
